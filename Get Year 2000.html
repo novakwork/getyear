@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>19100</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide script from old browsers
+
+var days = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var months = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function pad(n) {
+  if (n < 10) return "0" + n;
+  return n;
+}
+
+function showTime() {
+  var now = new Date();
+  var year = "19" + now.getYear();
+  var text = pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds())
+    + "&nbsp;&nbsp;" + days[now.getDay()] + " " + now.getDate() + " " + months[now.getMonth()] + " " + year;
+
+  if (document.getElementById) {
+    document.getElementById("clock").innerHTML = text;
+  } else if (document.all) {
+    document.all["clock"].innerHTML = text;
+  }
+
+  setTimeout("showTime()", 1000);
+}
+
+// end hiding -->
+</SCRIPT>
+<STYLE TYPE="text/css">
+<!--
+HTML, BODY { height: 100%; margin: 0; padding: 0; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" onLoad="showTime()">
+
+<TABLE WIDTH="100%" HEIGHT="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+  <TR>
+    <TD HEIGHT="40">&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD ALIGN="CENTER" VALIGN="MIDDLE">
+      <FONT FACE="Arial, Helvetica, sans-serif" SIZE="4"><SPAN ID="clock">&nbsp;</SPAN></FONT>
+    </TD>
+  </TR>
+  <TR>
+    <TD ALIGN="CENTER" VALIGN="BOTTOM" HEIGHT="40">
+      <FONT FACE="Arial, Helvetica, sans-serif" SIZE="2" COLOR="#999999">Shannon Novak, (C) 19100</FONT>
+      <BR><BR>
+    </TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>
